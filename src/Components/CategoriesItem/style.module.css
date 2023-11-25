@@ -1,0 +1,20 @@
+.conteiner{
+    border: 2px solid none;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 300px auto auto;
+    gap: 10px;
+}
+
+.conteiner img{
+    width: 300px;
+    height: 300px; 
+}
+
+.conteiner p{
+    font-size: 18px;
+    text-align: center;
+}
+
+
+

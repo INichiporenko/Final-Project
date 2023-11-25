@@ -1,0 +1,214 @@
+.conteiner{
+    border: 2px solid black;
+    border-radius: 21px;
+    width: 500px;
+    height: 400px;
+    padding: 25px;
+}
+
+.block{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+
+}
+
+.price{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-top: 20px;
+}
+
+.price p{
+    font-size: 30px;
+}
+
+.total_price{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.total_price p{
+    font-size: 40px;
+    display: inline-block;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding-top: 20px;
+}
+
+.footer button{
+    width: 446px;
+    height: 63px;
+    border-radius: 20px;
+    border: 2px solid #393;
+    background-color: #393;
+    cursor: pointer;
+}
+
+.btn{
+    color: white;
+    font-size: 25px;
+}
+
+.input{
+    font-size: 18px;
+    padding-left: 25px;
+}
+
+.order{
+    font-size: 45px;
+}
+
+.search{
+    max-width: 468px;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    gap: 20px;
+    width: 446px;
+    height: 63px;
+    border: 2px solid #393;;
+}
+
+.search input{
+    border: none;
+    width: 100%;
+}
+
+.search input:focus{
+    outline: none;
+}
+
+.search p{
+    color: grey;
+}
+
+.error{
+    display: flex;
+    justify-content: space-around;
+    color: red;
+}
+
+.thankYouBlock {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
+
+.thankYouBlock img{
+    width: 300px;
+    height: 200px;
+}
+
+.link{
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    width: 400px;
+    height: 63px;
+    border-radius: 20px;
+    border: 2px solid #393;
+    background-color: #393;
+    cursor: pointer;
+    font-size: 25px;
+    
+}
+
+.back{
+    width: 400px;
+    height: 60px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+/* ___________________________________ */
+
+@media (max-width: 600px ){
+    .conteiner{
+        border: 2px solid black;
+        border-radius: 21px;
+        width: 300px;
+        height: 300px;
+        padding: 25px;
+    }
+
+    .order{
+        font-size: 25px;
+    }
+
+    .price p{
+        font-size: 20px;
+    }
+
+    .footer button{
+        width: 223px;
+        height: 30px;
+        border-radius: 15px;
+        border: 2px solid #393;
+        background-color: #393;
+        cursor: pointer;
+    }
+
+    .btn{
+        color: white;
+        font-size: 15px;
+    }
+
+    .search{
+        max-width: 223px;
+        border-radius: 15px;
+        padding: 0 12px;
+        gap: 10px;
+        height: 30px;
+        border: 2px solid #393;;
+    }
+
+    .footer p{
+        display: none;
+    }
+}
+
+@media (max-width: 625px ){
+    .thankYouBlock {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+    
+    .thankYouBlock img{
+        width: 200px;
+        height: 150px;
+    }
+
+    .link{
+        text-decoration: none;
+        color: white;
+        font-size: 20px;
+        width: 250px;
+        height: 43px;
+        border-radius: 20px;
+        border: 2px solid #393;
+        background-color: #393;
+        cursor: pointer;
+        font-size: 20px;
+        
+    }
+    
+    .back{
+        width: 250px;
+        height: 40px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+}

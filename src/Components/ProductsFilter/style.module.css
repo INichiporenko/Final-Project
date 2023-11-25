@@ -1,0 +1,127 @@
+.container{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.container p{
+    font-size: 20px;
+}
+
+.priceFilter{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+.priceFilter input{
+    box-sizing: border-box;
+    width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+.priceFilter button{
+    width: 21px;
+    height: 21px;
+    border-radius: 10px;
+    background-color: white;
+    cursor: pointer;
+    padding: 2px;
+}
+
+.sorted{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 10px;
+}
+
+.sorted p{
+    font-size: 20px;
+}
+
+
+.select{
+    width: 150px;
+    height: 30px;
+    font-size: 15px; 
+    border-radius: 10px;
+    padding: 2px;
+    border: 2px solid black;
+    
+}
+
+.placeholder{
+    color: rgb(166, 166, 166);
+}
+
+.box{
+    display: flex;
+    gap: 15px;
+}
+
+.box p{
+    font-size: 20px;
+}
+
+.checkBox{
+    display: flex;
+    gap: 10px;
+
+}
+
+.checkbox{
+    height: 0;
+    width: 0;
+    position: absolute;
+    left: -100000px;
+}
+
+.label{
+    display: block;
+    width: 50px;
+    height: 25px;
+    background-color: rgb(177, 176, 176);
+    border-radius: 25px;
+    transition: background-color 0.5s;
+    cursor: pointer;
+    position: relative;
+}
+
+/* шарик */
+.label::after{
+    content: '';
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    border-radius: 21px;
+    background-color: white;
+    top: 2px;
+    left: 2px;
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}   
+
+.checkbox:checked+label{
+    background-color: #393;
+}
+
+/* движение шарика */
+.checkbox:checked+.label::after{
+    left: 27px;
+}
+
+/* __________________________________________ */
+
+@media (max-width: 840px){
+    .container{
+        display: flex;
+        flex-direction: column;
+        margin-top: 0px;
+        gap: 15px;
+    }
+}
+

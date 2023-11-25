@@ -1,0 +1,117 @@
+.nav{
+    background-color: white;
+    box-sizing: border-box;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: white;
+    box-sizing: border-box;
+    z-index: 1000; /* Устанавливаем z-index, чтобы меню оставалось наверху */
+}
+
+.conteiner{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+
+.btn{
+    background-color: #393;
+    border-radius: 5px;
+    padding: 15px 30px;
+    color: white;
+    border-style: none;
+    left: 28px;
+    font-size: 16px;
+    padding: 14px 30px 15px 30px;
+    text-decoration: none;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    cursor: pointer;
+
+}
+
+.link{
+    display: flex;
+    gap: 34px;
+}
+
+.link a{
+    color: black;
+    border: 2px solid white;
+    padding: 10px;
+    text-decoration: none;
+}
+
+.link .active{
+    border-color: #393;
+}  
+
+.icon {
+    font-size: 50px;
+    position: relative; 
+}
+
+.iconColor{
+    color: black;
+}
+
+.cartCount {
+    position: absolute;
+    top: 29%;
+    right: 30%;
+    background-color: #393;
+    color: white;
+    font-size: 15px;
+    padding: 2px 6px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* _______________________________________ */
+
+@media (max-width: 810px){
+    .btn{
+        display: none;
+    }
+}
+
+@media (max-width: 685px){
+    .logo{
+        display: flex;
+        align-items: center;
+        gap: 0px;
+    }
+
+    .logo img{
+        width: 50px;
+    }
+
+    .link{
+        display: flex;
+        gap: 15px;
+    }
+    
+    .link a{
+        color: black;
+        border: 2px solid white;
+        padding: 5px;
+        text-decoration: none;
+    }
+
+    .icon {
+        font-size: 25px;
+        position: relative; 
+    }
+
+}

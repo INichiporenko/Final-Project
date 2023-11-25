@@ -1,0 +1,28 @@
+3. адаптивность на каждой странице
+11. мобильный формат
+
+
+
+
+адаптивная картинка на  allproduct
+display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(318px, 1fr));
+
+
+
+
+
+const phoneNumberRegex = /^\+49 \d{3} \d{3}-\d{2}-\d{2}$/;
+    if (!phoneNumberRegex.test(number.value)) {
+      toast.error("Error! Please, enter a valid phone number!", {
+        position: "top-right",
+        autoClose: 2000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: false,
+        draggable: false,
+        progress: undefined,
+        theme: "colored",
+      });
+      return; 
+    }

@@ -1,0 +1,18 @@
+.catalogs{
+    border: 2px solid none;
+    padding: 10px;
+    display: grid;
+    grid-template-rows: 300px auto auto;
+    gap: 10px;
+}
+
+.catalogs img{
+    width: 300px;
+    height: 300px; 
+
+}
+
+.title p{
+    font-size: 18px;
+    text-align: center;
+}

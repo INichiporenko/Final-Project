@@ -1,0 +1,148 @@
+.footer{
+    margin: 0 auto;
+    padding: 10px 20px;
+    gap: 60px;
+}
+
+.conteiner{
+	left: 0;
+	bottom: 0;
+    width: 100%;
+	height: 80px;
+    box-sizing: border-box;
+}
+
+.allcontact{
+    display: grid;
+    grid-template-columns: 1fr auto;
+    gap: 30px;
+    padding: 30px;
+}
+
+.contact{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.contact h2{
+    text-shadow: none;
+}
+
+.messenger{
+    display: grid; 
+    grid-template-columns: 1fr auto;
+    justify-items: center;
+    width: 30px;
+    gap: 0 25px;
+}
+
+.adress{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 400px;
+}
+
+.adr{
+    font-size: 20px;
+    font-weight: 500;
+    text-decoration-line: underline;
+    color: black;
+}
+
+.adress p{
+    font-size: 13px;
+}
+
+.adress h2{
+    font-weight: normal; 
+    font-size: 18px;
+}
+
+.time{
+    display: flex;
+    flex-direction: column;
+}
+
+.time h2{
+    text-shadow: none;
+}
+
+/* ____________________________________________ */
+
+@media (max-width: 1180px){
+    .contact h2{
+        font-size: 40px;
+    }
+
+    .adress a{
+        font-size: 18px;
+    }
+
+    .allcontact{
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
+    .adress{
+        display: flex;
+        align-items: center;
+    }
+
+}
+
+@media (max-width: 875px){
+    .contact h2{
+        font-size: 20px;
+    }
+
+    .adress{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 200px;
+    }
+}
+
+@media (max-width: 723px){
+    .contact h2{
+        font-size: 15px;
+    }
+}
+
+
+@media (max-width: 650px){
+    .allcontact{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact{
+        display: flex;
+        align-items: center;
+        width: 150px;
+        
+    }
+
+    .messenger{
+        display: grid; 
+        grid-template-columns: 1fr auto;
+        justify-items: center;  
+        width: 150px;
+        gap: 0 5px;
+    
+    }
+    .messenger img{
+        width: 20px;
+        justify-content: center;
+    }
+
+    .time{
+        display: flex;
+        align-items: center;
+    }
+}

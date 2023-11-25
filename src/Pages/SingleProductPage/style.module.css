@@ -1,0 +1,130 @@
+.conteiner{
+    padding: 0;
+    margin: 10px;
+}
+
+.product{
+    width: 1440px;
+    height: 717px;
+    padding: 114px 0px 1000px 29px;
+
+}
+
+.block{
+    display: grid;
+    grid-template-columns: 750px auto;
+    justify-content: space-between;
+    gap: 70px;
+}
+
+.head{
+    width: 826px;
+    height: 717px;
+}
+
+.block img{
+    width: 710px;
+    height: 710px;
+}
+
+.info{
+    display: grid;
+    grid-template-rows: auto auto 1fr auto;
+    /* width: 425px; */
+    height: 454px;
+    gap: 40px;
+
+}
+
+.dis_prs{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    gap: 15px;
+}
+
+.discont_price{
+    color: #000;
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 130%; 
+}
+
+.price{
+    color: #000;
+    font-size: 70px;
+    font-weight: 600;
+    line-height: 130%; 
+    display: flex;
+}
+
+.mark{
+    text-decoration: line-through;
+    color: #8B8B8B;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 130%; 
+
+}
+
+.dis_price{
+    color: red;
+    font-size: 28px;
+    font-weight: 600;
+    line-height: 130%;
+}
+
+.info button {
+    border-radius: 10px;
+    border: 2px solid #393;
+    background: #393;
+    width: 314px;
+    height: 86px;
+    cursor: pointer;
+}
+
+.btn{
+    color: white;
+    font-size: 28px;
+
+}
+
+.underline{
+    border-bottom: 3px dashed rgb(223, 222, 222);
+}
+
+.description{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.total{
+    color: black;
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 130%; 
+    padding-bottom: 20px;
+}
+
+.link {
+    display: flex;
+    justify-content: flex-start;
+    text-decoration: none;
+    color: black;
+    gap: 5px;
+    margin-bottom: 20px;
+}
+
+.link p{
+    font-size: 20px;
+    font-weight: 70;
+}
+
+.link .icon{
+    font-size: 25px;
+}

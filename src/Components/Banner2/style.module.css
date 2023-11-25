@@ -1,0 +1,125 @@
+#banner2{
+    background: linear-gradient(263deg, #393 -0.43%, #006300 104.36%);
+    padding: 30px 0;
+    width: 100%;
+    height: 400px;
+    margin: 50px 0;
+}
+
+.ban{
+    display: flex;
+    justify-content: space-between;
+    height: 250px;
+}
+
+.gnom img{
+    position: relative;
+    width: 350px;
+    height: 350px;
+    top: -10px;
+    margin-left: 100px;
+}
+
+.block{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: 40px 200px 0 0;
+
+}
+
+.block img{
+    margin: 0 0 40px 0;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.search{
+    max-width: 468px;
+    width: 100%;
+    background-color: white;
+    height: 48px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+    gap: 20px;
+}
+
+.search input{
+    border: none;
+    width: 100%;
+}
+
+.search input:focus{
+    outline: none;
+}
+
+.search p{
+    color: grey;
+}
+
+.button{
+    max-width: 468px;
+    width: 100%;
+    background: linear-gradient(263deg, #393 -0.43%, #006300 104.36%);
+    height: 48px;
+    border: 2px solid white;
+    border-radius: 20px;
+    border-color: white;
+    align-items: center; 
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+/* ______________________________________ */
+
+@media (max-width: 940px) {
+    .gnom img{
+        display: none;
+    }
+
+    .block{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 0;
+    }
+
+    .ban{
+        display: flex;
+        justify-content: center;
+    }
+
+
+}
+
+@media (max-width: 510px){
+    .img2{
+        width: 300px;
+        display: flex;
+    }
+
+    .ban{
+        display: flex;
+        justify-content: center;
+    }
+
+    .block{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 350px;
+        padding: 30px;
+    }
+
+    .banner2{
+        display: flex;
+    }
+}
